@@ -1,0 +1,17 @@
+{
+  "title": "Pager Duty Urgency Enrichment",
+  "properties": {
+    "rule": {
+      "type": "string"
+    },
+    "rule_id": {
+      "type": "string"
+    },
+    "urgency_id": {
+      "type": "string",
+      "default": "low",
+      "enum": ["low", "medium", "high", "critical", "emergency"]
+    }
+  },
+  "required": ["rule", "rule_id"]
+}
